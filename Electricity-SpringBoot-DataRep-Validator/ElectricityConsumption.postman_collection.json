@@ -1,0 +1,270 @@
+{
+	"id": "19f91295-a203-8e48-789c-d234cc44ff6d",
+	"name": "ElectricityConsumption",
+	"description": "",
+	"order": [
+		"4ca0753e-1d10-2a32-a028-82ceb5ee673b",
+		"c7dfa785-89d2-c670-aafb-5c459f411c17",
+		"53f2f77b-4a46-c018-6354-2a90f1533b0a",
+		"67292d2e-ff02-5b27-8e6d-9840c06865ca",
+		"7b3f5594-40e1-97a4-950c-2e204096d0b1",
+		"53d386f4-65bf-d469-6d7f-6cd12f3fb719",
+		"4217a13b-da2d-d667-ba6d-3e6527d97fd1",
+		"6e6e2b0c-b0d7-fdd7-8cc6-c2063499cbc0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1515886047717,
+	"owner": "2025695",
+	"public": false,
+	"requests": [
+		{
+			"id": "4217a13b-da2d-d667-ba6d-3e6527d97fd1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/fractions/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511733266478,
+			"name": "http://localhost:8080/fractions/ put",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"collection_id": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"rawModeData": "{ \"id\":4, \"profileId\":1, \"month\":4, \"value\":0.4}"
+		},
+		{
+			"id": "4ca0753e-1d10-2a32-a028-82ceb5ee673b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/profiles/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1515886974892,
+			"name": "http://localhost:8080/profiles",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"rawModeData": "{ \"meterId\":1, \"name\":\"Jack\", \"surname\":\"Smith\" }"
+		},
+		{
+			"id": "53d386f4-65bf-d469-6d7f-6cd12f3fb719",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/consumptionfractions/3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511778510524,
+			"name": "http://localhost:8080/fractions/",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "1c9c9aa5-ba23-626c-9440-b28e0cfde3e8",
+			"collection_id": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"rawModeData": "[\n\t{\n\t\"profileId\":\"1\",\n\t\"month\":\"2\",\n\t\"amount\":\"0.5\"\n},\n\t{\n\t\"profileId\":\"1\",\n\t\"month\":\"1\",\n\t\"amount\":\"0.2\"\n}\n\t]"
+		},
+		{
+			"id": "53f2f77b-4a46-c018-6354-2a90f1533b0a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/consumptionfractions/addAll",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1515887067150,
+			"name": "http://localhost:8080/consumptionfractions/add valid",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"rawModeData": "[ \n\t{ \"profileId\":1, \"month\":1, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":2, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":3, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":4, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":5, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":6, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":7, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":8, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":9, \"value\":0.05},\n\t{ \"profileId\":1, \"month\":10, \"value\":0.05},\n\t{ \"profileId\":1, \"month\":11, \"value\":0.05},\n\t{ \"profileId\":1, \"month\":12, \"value\":0.05}\n\t]"
+		},
+		{
+			"id": "67292d2e-ff02-5b27-8e6d-9840c06865ca",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/meterreadings/addAll",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1515887044645,
+			"name": "http://localhost:8080/meterreadings/addAll",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"rawModeData": "[ \n { \"meterId\":1, \"month\":5, \"amount\":40 },\t\n { \"meterId\":1, \"month\":1, \"amount\":10 },\n { \"meterId\":1, \"month\":10, \"amount\":90 }, \n { \"meterId\":1, \"month\":2, \"amount\":20 },\n { \"meterId\":1, \"month\":8, \"amount\":70 },\n { \"meterId\":1, \"month\":9, \"amount\":80 },\n { \"meterId\":1, \"month\":3, \"amount\":30 },\n { \"meterId\":1, \"month\":4, \"amount\":35 },\n { \"meterId\":1, \"month\":6, \"amount\":50 },\n { \"meterId\":1, \"month\":7, \"amount\":60 },\n { \"meterId\":1, \"month\":11, \"amount\":100 },\n { \"meterId\":1, \"month\":12, \"amount\":110 }\n]"
+		},
+		{
+			"id": "6e6e2b0c-b0d7-fdd7-8cc6-c2063499cbc0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/consumptionfractions/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511778491183,
+			"name": "http://localhost:8080/fractions/",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"collection_id": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"rawModeData": "[\n\t{\n\t\"profileId\":\"1\",\n\t\"month\":\"2\",\n\t\"amount\":\"0.5\"\n},\n\t{\n\t\"profileId\":\"1\",\n\t\"month\":\"1\",\n\t\"amount\":\"0.7\"\n}\n\t]"
+		},
+		{
+			"id": "7b3f5594-40e1-97a4-950c-2e204096d0b1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/fractions/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511732598612,
+			"name": "http://localhost:8080/fractions/add",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "becee37d-7494-05fb-4a0c-3fc99f130e98",
+			"collection_id": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"rawModeData": "[ \n\t{ \"profileId\":1, \"month\":1, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":2, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":3, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":4, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":5, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":6, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":7, \"value\":0.1},\n\t{ \"profileId\":1, \"month\":8, \"value\":0.1},\n\t{ \"profileId\":2, \"month\":12, \"value\":0.9},\n\t{ \"profileId\":2, \"month\":6, \"value\":0.2},\t\n\t{ \"profileId\":1, \"month\":9, \"value\":0.05},\n\t{ \"profileId\":1, \"month\":10, \"value\":0.05},\n\t{ \"profileId\":1, \"month\":11, \"value\":0.05},\n\t{ \"profileId\":1, \"month\":12, \"value\":0.05}\n\t]"
+		},
+		{
+			"id": "c7dfa785-89d2-c670-aafb-5c459f411c17",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/profiles/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511778412168,
+			"name": "http://localhost:8080/profiles",
+			"description": "",
+			"collectionId": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "f7dff1b0-01f9-19d7-2e6e-663d7cab5bfe",
+			"collection_id": "19f91295-a203-8e48-789c-d234cc44ff6d",
+			"rawModeData": "{ \"meterId\":1, \"name\":\"Jack\", \"surname\":\"Smith\" }"
+		}
+	]
+}
