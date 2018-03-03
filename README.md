@@ -8,6 +8,7 @@ Electricity Consumption Application is a sample SpringBoot Application has imple
 * Java 8 or later
 * Maven 3 or later
 * Spring Boot 1.5.10
+* RESTful Web Services
 * Spring Boot Maven plugin
 * Spring Data REST Validators
 * Error Handling for REST with Spring
